@@ -5,15 +5,14 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.bosion.maven</groupId>
-    <artifactId>MNG-6870-sample</artifactId>
+    <artifactId>dependency-pom</artifactId>
     <version>1.0.0-SNAPSHOT</version>
-    <modules>
-        <module>parent-pom</module>
-        <module>child-interpolating-pom</module>
-        <module>child-non-interpolating-pom</module>
-        <module>dependency-pom</module>
-        <module>dep-interpolating-pom</module>
-    </modules>
-    <packaging>pom</packaging>
+
+    <distributionManagement>
+        <repository>
+            <id>example-repo</id>
+            <url>file:../repository</url>
+        </repository>
+    </distributionManagement>
 
 </project>
